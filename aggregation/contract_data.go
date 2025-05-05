@@ -5,7 +5,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/decentrio/soro-book/database/models"
+	"github.com/decentrio/sorobook/database/models"
 	"github.com/google/uuid"
 	"github.com/stellar/go/strkey"
 	"github.com/stellar/go/xdr"

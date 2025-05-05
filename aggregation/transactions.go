@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/decentrio/converter/converter"
-	"github.com/decentrio/soro-book/database/models"
+	"github.com/decentrio/sorobook/database/models"
 	"github.com/stellar/go/ingest"
 	"github.com/stellar/go/xdr"
 )

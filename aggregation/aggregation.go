@@ -9,10 +9,10 @@ import (
 	"github.com/stellar/go/support/log"
 	"github.com/stellar/go/xdr"
 
-	"github.com/decentrio/soro-book/config"
-	db "github.com/decentrio/soro-book/database/handlers"
-	"github.com/decentrio/soro-book/database/models"
-	"github.com/decentrio/soro-book/lib/service"
+	"github.com/decentrio/sorobook/config"
+	db "github.com/decentrio/sorobook/database/handlers"
+	"github.com/decentrio/sorobook/database/models"
+	"github.com/decentrio/sorobook/lib/service"
 )
 
 const (

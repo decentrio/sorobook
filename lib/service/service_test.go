@@ -3,7 +3,7 @@ package service_test
 import (
 	"testing"
 
-	"github.com/decentrio/soro-book/lib/service"
+	"github.com/decentrio/sorobook/lib/service"
 	"github.com/stretchr/testify/require"
 )
 

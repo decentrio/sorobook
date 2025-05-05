@@ -5,7 +5,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/decentrio/soro-book/database/models"
+	"github.com/decentrio/sorobook/database/models"
 	"github.com/stellar/go/ingest"
 	backends "github.com/stellar/go/ingest/ledgerbackend"
 	"github.com/stellar/go/xdr"

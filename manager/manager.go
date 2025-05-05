@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/decentrio/soro-book/aggregation"
-	"github.com/decentrio/soro-book/config"
-	"github.com/decentrio/soro-book/lib/service"
+	"github.com/decentrio/sorobook/aggregation"
+	"github.com/decentrio/sorobook/config"
+	"github.com/decentrio/sorobook/lib/service"
 	"github.com/stellar/go/support/log"
 )
 

@@ -3,8 +3,8 @@ package controller
 import (
 	"net/http"
 
-	"github.com/decentrio/soro-book/database/handlers"
-	"github.com/decentrio/soro-book/database/models"
+	"github.com/decentrio/sorobook/database/handlers"
+	"github.com/decentrio/sorobook/database/models"
 	"github.com/gin-gonic/gin"
 )
 

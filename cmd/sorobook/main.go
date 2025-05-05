@@ -4,7 +4,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/decentrio/soro-book/lib/cli"
+	"github.com/decentrio/sorobook/lib/cli"
 )
 
 func main() {

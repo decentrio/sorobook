@@ -7,13 +7,13 @@ import (
 	"os/signal"
 	"syscall"
 
-	cfg "github.com/decentrio/soro-book/config"
-	"github.com/decentrio/soro-book/lib/cli"
-	"github.com/decentrio/soro-book/manager"
+	cfg "github.com/decentrio/sorobook/config"
+	"github.com/decentrio/sorobook/lib/cli"
+	"github.com/decentrio/sorobook/manager"
 	"github.com/spf13/cobra"
 )
 
-var DefaultCometDir = ".soro-book"
+var DefaultCometDir = ".sorobook"
 
 var rootCmd = &cobra.Command{
 	Use: "sorobook",

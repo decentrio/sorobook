@@ -3,7 +3,7 @@ package service
 import (
 	"errors"
 
-	// "github.com/decentrio/soro-book/lib/log"
+	// "github.com/decentrio/sorobook/lib/log"
 	"github.com/stellar/go/support/log"
 )
 

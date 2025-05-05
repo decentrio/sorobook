@@ -1,4 +1,4 @@
-module github.com/decentrio/soro-book
+module github.com/decentrio/sorobook
 
 go 1.23
 

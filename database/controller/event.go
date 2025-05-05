@@ -5,8 +5,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/decentrio/soro-book/database/handlers"
-	"github.com/decentrio/soro-book/database/models"
+	"github.com/decentrio/sorobook/database/handlers"
+	"github.com/decentrio/sorobook/database/models"
 )
 
 func CreateEvent(h *handlers.DBHandler) gin.HandlerFunc {

@@ -3,7 +3,7 @@ package handlers
 import (
 	"fmt"
 
-	"github.com/decentrio/soro-book/database/models"
+	"github.com/decentrio/sorobook/database/models"
 )
 
 func (h *DBHandler) CreateLedger(data *models.Ledger) (string, error) {

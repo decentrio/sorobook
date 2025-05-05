@@ -9,16 +9,16 @@ sudo apt-get update && sudo apt-get install stellar-core
 
 # Install and run Sorobook
 
-Clone [Sorobook Github repo](https://github.com/decentrio/soro-book) and build
+Clone [Sorobook Github repo](https://github.com/decentrio/sorobook) and build
 ```
-git clone https://github.com/decentrio/soro-book
-cd soro-book
+git clone https://github.com/decentrio/sorobook
+cd sorobook
 make install
 ```
 
 Config Stellar Core binary directory
 ```
-nvim soro-book/config/config.go
+nvim sorobook/config/config.go
 ```
 
 Add Postgres Url config and run Sorobook directly
