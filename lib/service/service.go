@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	// "github.com/decentrio/sorobook/lib/log"
-	"github.com/stellar/go/support/log"
+	"github.com/stellar/go-stellar-sdk/support/log"
 )
 
 var (

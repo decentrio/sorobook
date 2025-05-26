@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/decentrio/sorobook/database/models"
-	"github.com/stellar/go/ingest"
-	backends "github.com/stellar/go/ingest/ledgerbackend"
-	"github.com/stellar/go/xdr"
+	"github.com/stellar/go-stellar-sdk/ingest"
+	backends "github.com/stellar/go-stellar-sdk/ingest/ledgerbackend"
+	"github.com/stellar/go-stellar-sdk/xdr"
 )
 
 type LedgerWrapper struct {

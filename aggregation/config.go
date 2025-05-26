@@ -6,10 +6,10 @@ import (
 	"fmt"
 
 	"github.com/decentrio/sorobook/config"
-	"github.com/stellar/go/historyarchive"
-	"github.com/stellar/go/ingest/ledgerbackend"
-	"github.com/stellar/go/network"
-	"github.com/stellar/go/support/log"
+	"github.com/stellar/go-stellar-sdk/historyarchive"
+	"github.com/stellar/go-stellar-sdk/ingest/ledgerbackend"
+	"github.com/stellar/go-stellar-sdk/network"
+	"github.com/stellar/go-stellar-sdk/support/log"
 )
 
 var (
@@ -83,7 +83,6 @@ func newLedgerBackend(ctx context.Context, config config.AggregationConfig, log 
 	params := ledgerbackend.CaptiveCoreTomlParams{
 		NetworkPassphrase:  networkPassphrase,
 		HistoryArchiveURLs: historyArchiveURLs,
-		UseDB:              true,
 	}
 	captiveCoreToml, err := ledgerbackend.NewCaptiveCoreTomlFromData(captiveCoreConfig, params)
 	if err != nil {
@@ -98,7 +97,6 @@ func newLedgerBackend(ctx context.Context, config config.AggregationConfig, log 
 		Log:                 log.WithField("subservice", "stellar-core"),
 		Toml:                captiveCoreToml,
 		UserAgent:           "ledger-exporter",
-		UseDB:               true,
 	}
 	// Create a new captive core backend
 	backend, err := ledgerbackend.NewCaptive(captiveConfig)

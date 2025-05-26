@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	backends "github.com/stellar/go/ingest/ledgerbackend"
-	"github.com/stellar/go/support/log"
-	"github.com/stellar/go/xdr"
+	backends "github.com/stellar/go-stellar-sdk/ingest/ledgerbackend"
+	"github.com/stellar/go-stellar-sdk/support/log"
+	"github.com/stellar/go-stellar-sdk/xdr"
 
 	"github.com/decentrio/sorobook/config"
 	db "github.com/decentrio/sorobook/database/handlers"

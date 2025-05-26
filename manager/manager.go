@@ -8,7 +8,7 @@ import (
 	"github.com/decentrio/sorobook/aggregation"
 	"github.com/decentrio/sorobook/config"
 	"github.com/decentrio/sorobook/lib/service"
-	"github.com/stellar/go/support/log"
+	"github.com/stellar/go-stellar-sdk/support/log"
 )
 
 // Manager is the root service that manage all services

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net/http"
 
-	backends "github.com/stellar/go/ingest/ledgerbackend"
+	backends "github.com/stellar/go-stellar-sdk/ingest/ledgerbackend"
 )
 
 func GetLatestLedger(config backends.CaptiveCoreConfig) (uint32, error) {

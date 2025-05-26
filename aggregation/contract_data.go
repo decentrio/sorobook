@@ -7,8 +7,8 @@ import (
 
 	"github.com/decentrio/sorobook/database/models"
 	"github.com/google/uuid"
-	"github.com/stellar/go/strkey"
-	"github.com/stellar/go/xdr"
+	"github.com/stellar/go-stellar-sdk/strkey"
+	"github.com/stellar/go-stellar-sdk/xdr"
 )
 
 func (as *Aggregation) contractDataEntryProcessing() {

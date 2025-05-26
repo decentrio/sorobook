@@ -1,8 +1,8 @@
 package aggregation
 
 import (
-	"github.com/stellar/go/toid"
-	"github.com/stellar/go/xdr"
+	"github.com/stellar/go-stellar-sdk/toid"
+	"github.com/stellar/go-stellar-sdk/xdr"
 )
 
 type transactionOperationWrapper struct {
