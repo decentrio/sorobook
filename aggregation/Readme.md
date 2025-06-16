@@ -11,9 +11,9 @@ The package itself include 5 part:
 - Contract Event Process
 
 ### Aggregation Process
-The `Aggregation Proccess` use [go/ingest](https://github.com/stellar/go/tree/master/ingest) package for collecting the on-chain`ledger` information. The aggregation is defined in [getNewLedger()](https://github.com/decentrio/sorobook/blob/fad4719f4a7fd0cc8b0ce342b5faac9f6d2ad7ad/aggregation/ledger.go#L14) and push to `ledgerQueue` which would be used by `Ledger Process`
+The `Aggregation Process` use [go/ingest](https://github.com/stellar/go/tree/master/ingest) package for collecting the on-chain`ledger` information. The aggregation is defined in [getNewLedger()](https://github.com/decentrio/sorobook/blob/fad4719f4a7fd0cc8b0ce342b5faac9f6d2ad7ad/aggregation/ledger.go#L14) and push to `ledgerQueue` which would be used by `Ledger Process`
 
-### Ledger Proccess
+### Ledger Process
 ```go=
 type LedgerWrapper struct {
     ledger models.Ledger
@@ -38,4 +38,4 @@ The `Transaction Process` is defined in [transactionProcessing()](https://github
 The `Contract Data Process` is defined in [contractDataEntryProcessing()](https://github.com/decentrio/sorobook/blob/fad4719f4a7fd0cc8b0ce342b5faac9f6d2ad7ad/aggregation/contract_data.go#L13). In this process, `contract data` will be stored into database
 
 ### Contract Events Process
-The `Contract Events Proccess` is defined in [contractEventsProcessing()](https://github.com/decentrio/sorobook/blob/fad4719f4a7fd0cc8b0ce342b5faac9f6d2ad7ad/aggregation/contract_events.go#L35). There are 2 type of contract events that will corresponding with 2 channel `assetContractEventsQueue` and `wasmContractEventsQueue`. In this process, we check the specific type of event and store it into database
+The `Contract Events Process` is defined in [contractEventsProcessing()](https://github.com/decentrio/sorobook/blob/fad4719f4a7fd0cc8b0ce342b5faac9f6d2ad7ad/aggregation/contract_events.go#L35). There are 2 type of contract events that will corresponding with 2 channel `assetContractEventsQueue` and `wasmContractEventsQueue`. In this process, we check the specific type of event and store it into database
