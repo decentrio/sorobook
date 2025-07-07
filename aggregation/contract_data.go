@@ -75,17 +75,17 @@ func (tw TransactionWrapper) GetModelsContractDataEntry() []models.ContractsData
 				}
 
 				entry := models.ContractsData{
-					Id:            uuid.New().String(),
-					ContractId:    contractId,
-					AccountId:     accountId,
-					TxHash:        tw.GetTransactionHash(),
-					Ledger:        tw.GetLedgerSequence(),
-					EntryType:     entryType,
-					KeyXdr:        keyBz,
-					ValueXdr:      valBz,
-					Durability:    int32(entry.Durability),
-					IsNewest:      true,
-					UpdatedLedger: uint32(math.MaxInt32),
+					Id:             uuid.New().String(),
+					ContractId:     contractId,
+					AccountId:      accountId,
+					TxHash:         tw.GetTransactionHash(),
+					Ledger:         tw.GetLedgerSequence(),
+					EntryType:      entryType,
+					KeyXdr:         keyBz,
+					ValueXdr:       valBz,
+					Durability:     int32(entry.Durability),
+					IsNewest:       true,
+					PreviousLedger: uint32(math.MaxInt32),
 				}
 				entries = append(entries, entry)
 			}

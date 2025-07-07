@@ -50,17 +50,17 @@ type ScAddress struct {
 }
 
 type ContractsData struct {
-	Id            string `json:"id,omitempty"`
-	ContractId    string `json:"contract_id,omitempty"`
-	AccountId     string `json:"account_id,omitempty"`
-	TxHash        string `json:"tx_hash,omitempty"`
-	Ledger        uint32 `json:"ledger,omitempty"`
-	EntryType     string `json:"entry_type,omitempty"`
-	KeyXdr        []byte `json:"key_xdr,omitempty"`
-	ValueXdr      []byte `json:"value_xdr,omitempty"`
-	Durability    int32  `json:"durability,omitempty"`
-	IsNewest      bool   `json:"is_newest,omitempty"`
-	UpdatedLedger uint32 `json:"updated_ledger,omitempty"` // previous updated ledger (TODO: we should correct the name here)
+	Id             string `json:"id,omitempty"`
+	ContractId     string `json:"contract_id,omitempty"`
+	AccountId      string `json:"account_id,omitempty"`
+	TxHash         string `json:"tx_hash,omitempty"`
+	Ledger         uint32 `json:"ledger,omitempty"`
+	EntryType      string `json:"entry_type,omitempty"`
+	KeyXdr         []byte `json:"key_xdr,omitempty"`
+	ValueXdr       []byte `json:"value_xdr,omitempty"`
+	Durability     int32  `json:"durability,omitempty"`
+	IsNewest       bool   `json:"is_newest,omitempty"`
+	PreviousLedger uint32 `json:"previous_ledger,omitempty"` // Ledger sequence of previous update
 }
 
 type Int128Parts struct {

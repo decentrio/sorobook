@@ -89,7 +89,7 @@ func (h *DBHandler) CreateContractEntry(data *models.ContractsData) (string, err
 			First(&oldData).Error; err == nil {
 			fmt.Println("CreateContractEntry Updated")
 			oldData.IsNewest = false
-			oldData.UpdatedLedger = data.Ledger - 1
+			oldData.PreviousLedger = data.Ledger - 1
 			if err := h.db.Table("contracts_data").Save(oldData).Error; err != nil {
 				return "ERROR: update old contract data entry", err
 			}
@@ -105,7 +105,7 @@ func (h *DBHandler) CreateContractEntry(data *models.ContractsData) (string, err
 			First(&oldData).Error; err == nil {
 			fmt.Println("CreateContractEntry Removed")
 			oldData.IsNewest = false
-			oldData.UpdatedLedger = data.Ledger - 1
+			oldData.PreviousLedger = data.Ledger - 1
 			if err := h.db.Table("contracts_data").Save(oldData).Error; err != nil {
 				return "ERROR: update old contract data entry", err
 			}
