@@ -46,7 +46,7 @@ func NewRunNodeCmd() *cobra.Command {
 				for range c {
 					if m.IsRunning() {
 						if err := m.Stop(); err != nil {
-							fmt.Printf(err.Error())
+							fmt.Printf("%s", err.Error())
 						}
 					}
 					os.Exit(0)
